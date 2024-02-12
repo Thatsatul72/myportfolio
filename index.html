@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/ce57c1d71e.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+    <div id="header">
+        <div class="container">
+             <nav>
+         
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fas fa-times " onclick="closemenu()"></i>
+                </ul>
+               
+                <i class="fas fa-bars" onclick="openmenu()"></i>
+            
+             </nav>
+             <div class="header-text">
+                <p>Computer Science Student</p>
+                <h1>Hi,I'm <span>Atul</span><br> Bisht from India</h1>
+             </div>
+        </div>
+    </div>
+ <!-- About -->
+     <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/myimage.jpeg">
+                </div>
+                
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>I'm Atul Bisht, a dedicated third-year student pursuing a Bachelor's degree in Computer Science and Engineering from Graphic Era Hill University. With a passion for technology and innovation, I thrive on exploring the vast realm of computer science. From mastering programming languages to tackling real-world challenges through projects and competitions, I continuously strive to expand my skill set. I'm particularly interested in emerging technologies and their potential to reshape the future. My goal is to leverage my knowledge and enthusiasm to make meaningful contributions in the tech industry.
+
+                    </p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                        <p class="tab-links" onclick="opentab('certificate')">Certificate</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                             <li><span>Machine learning</span><br>Developing machine learning models</li>
+                             <li><span>Web Development</span><br>Web Development</li>
+                             
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                             <li><span>Oct,2021-present</span><br>Bachelor of Technology (B.Tech) from Graphic Era Hill University</li>
+                             <li><span>2021</span><br>Completed 12th grade from Shivedale School (CBSE) with 89% in 2021</li>
+                             <li><span>2019</span><br>Completed 10th grade from Shivedale School (CBSE) with 85% in 2019.</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="certificate">
+                        <ul>
+                            <ul>
+                                <li><span>Data Structure and algorithms</span><br><a href="https://www.udemy.com/certificate/UC-c84c3ebc-6ff1-487d-9b92-cf8eafaabf90/">Udemy(Dec 31,2022)</a></li>
+                                <li><span>Data Science</span><br><a href="https://www.credly.com/badges/42226bd3-6a42-4f1f-a8a6-75c34db2e2da">Cisco Networking Academy(Sep 07,2023)</a></li>
+                            </ul>
+                            
+                           
+                       </ul>
+                </div>
+            </div>
+        </div>
+     </div>
+     <!-------Myprojects------>
+      <div id="projects">
+         <div class="container">
+            <h1 class="sub-title">Projects</h1>
+            <div class="projects-list">
+                 <div>
+                    <i class="fa-regular fa-credit-card"></i>
+                     <h2>Credit Card Fraud Detection</h2>
+                     <p>
+                        Developed a Machine learning model using a logistic regression algorithm to identify and prevent fraudulent activities in credit card transactions, achieving an impressive 97% accuracy
+                     </p>
+                     <a href="https://github.com/Thatsatul72/Credit-Card-Fraud-Detection" target="_blank">Learn more</a>
+                 </div>
+                 <div>
+                    <i class="fa-solid fa-clipboard-user"></i>
+                    <h2>Attendance System(OpenCV)</h2>
+                    <p>
+                        Designed and implemented a Python-based face recognition attendance system using OpenCV and face recognition algorithms, featuring face capture, recognition, and seamless integration with existing management systems.
+                       
+                    </p>
+                    <a href="https://github.com/Thatsatul72/Face-Recognition-Attendance-system/tree/main/face_recognition_project-main%20(1)" target ="_blank">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-utensils"></i>
+                    <h2>Resturant Website</h2>
+                    <p>
+                        I designed, and developed a restaurant website to provide customers with essential details about the restaurant, including its hospitality, menu offerings, and a convenient table booking section.
+                    </p>
+                    <a href="https://github.com/Thatsatul72/Resturant-Website/tree/main/Resturant">Learn more</a>
+                </div>
+            </div>
+         </div>
+      </div> 
+      <!-----Contact------->
+      <div id="contact">
+         <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-regular fa-envelope"></i>atulbisht562@gmail.com</p>
+                    <p><i class="fa-solid fa-phone"></i>+918445840391</p>
+                    <div class="social-icons">
+                        <a href="https://www.linkedin.com/in/atul-bisht-31a17024a/"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://github.com/Thatsatul72"><i class="fa-brands fa-github"></i></a>
+                        <a href="https://www.instagram.com/_atulbisht_09?utm_source=qr&igsh=MXhsZm9mZzRicXdxOQ=="><i class="fa-brands fa-square-instagram"></i></a>
+                       
+                    </div>
+                    <a href="images/Atul Bisht Resume .pdf" download class="btn btn2">Download Resume</a>
+                </div>
+                 <div class="contact-right">
+                     <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                         <textarea name="Message" rows="6" placeholder="Yore Message"></textarea>
+                         <button type="submit" class ="btn btn2">Submit</button>
+                     </form>
+                     <span id="msg"> </span>
+                </div>
+            </div>
+         </div>
+         
+      </div>
+
+ <script>
+     var tablinks = document.getElementsByClassName("tab-links");
+     var tabcontents = document.getElementsByClassName("tab-contents");
+      function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+      }
+ </script>
+
+ <script>
+     var sidemenu = document.getElementById("sidemenu");
+      
+     function openmenu(){
+        sidemenu.style.right = "0";
+     }
+     function closemenu(){
+        sidemenu.style.right = "-200px";
+     }
+ </script>
+ <script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbxJISeJom-54d6gKwO9ZtIc13yMXY4AB0L5XZqDM1bwq2AXiK7mrDR5f2kB4FDEfvUTyg/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg");
+   
+    
+    form.addEventListener('submit', e => {
+        e.preventDefault();
+    
+        fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+            .then(response => {
+                // Show the message
+                msg.style.display = 'block';
+                msg.innerHTML = "Message sent successfully";
+    
+                // Hide the message after 5 seconds
+                setTimeout(function () {
+                    msg.style.display = 'none';
+                    msg.innerHTML = "";
+                }, 2000);
+    
+                form.reset();
+            })
+            .catch(error => console.error('Error!', error.message));
+    });
+    
+    
+  </script>
+</body>
+</html>
