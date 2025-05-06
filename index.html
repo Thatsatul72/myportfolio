@@ -173,21 +173,24 @@
     form.addEventListener('submit', e => {
         e.preventDefault();
     
-        fetch(scriptURL, { method: 'POST', body: new FormData(form) })
-            .then(response => {
-                // Show the message
-                msg.style.display = 'block';
-                msg.innerHTML = "Message sent successfully";
-    
-                // Hide the message after 5 seconds
-                setTimeout(function () {
-                    msg.style.display = 'none';
-                    msg.innerHTML = "";
-                }, 2000);
-    
-                form.reset();
-            })
-            .catch(error => console.error('Error!', error.message));
+    fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+    .then(response => {
+        setTimeout(() => {
+            // Show the message
+            msg.style.display = 'block';
+            msg.innerHTML = "Message sent successfully";
+
+            // Hide the message after 1 second
+            setTimeout(function () {
+                msg.style.display = 'none';
+                msg.innerHTML = "";
+            }, 1000); // 1-second display time
+
+            form.reset();
+        }, 2000); // 2-second delay before showing message
+    })
+    .catch(error => console.error('Error!', error.message));
+
     });
     
     
